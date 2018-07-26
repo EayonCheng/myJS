@@ -1,92 +1,33 @@
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>全选和全不不选</title>
-		  检查是否上传成功,
-            <script>
-                function checkAll() {
-                    //1.获取编号前面的复选框
-                    var checkAllEle = document.getElementById("checkAll");
-					//对前面复选框的状态进行判断
-				if(checkAllEle.checked == true) {
-					//3.获取下面所有的复选框
-					var checkOnes = document.getElementsByName("checkOne");
-					//4.对所有的复选框进行遍历
-					for(var i = 0; i < checkOnes.length; i++) {
-						//5.拿到每一个复选框，并将其状态设置为选中
-						checkOnes[i].checked = true;
-					}
-				} else {
-					//6.获取下面所有的复选框
-					var checkOnes = document.getElementsByName("checkOne");
-					//7.对所有的复选框进行遍历
-					for(var i = 0; i < checkOnes.length; i++) {
-						//8.拿到每一个复选框，并将其状态设置为未选中
-						checkOnes[i].checked = false;
-					}
-				}
-				}
-		</script>
-	</head>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+	<!--输入整数a和b,若a2+b2大于100,则输出a2+b2百位以上数字,否则输出两数之和-->
+	<script>
+        function dianji() {
+            //3.创建两个变量
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            //4.判断a*a+b*b是否大于100
+            //5.如果a*a+b*b大于100，则输出a*a+b*b
+            if (a * a + b * b > 100) {
 
-	<body>
-		<img src="./images/1.jpg"/>
-		<table border="1" width="500" height="50" align="center">
-			<thead>
-				<tr>
-					<td colspan="4">
-						<input type="button" value="添加" />
-						<input type="button" value="删除" />
-					</td>
-				</tr>
-				<tr>
-					<th><input type="checkbox" onclick="checkAll()" id="checkAll" /></th>
-					<th>编号</th>
-					<th>姓名</th>
-					<th>年龄</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><input type="checkbox" name="checkOne" /></td>
-					<td>1</td>
-					<td>张三</td>
-					<td>22</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="checkOne" /></td>
-					<td>2</td>
-					<td>李四</td>
-					<td>25</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="checkOne" /></td>
-					<td>3</td>
-					<td>王五</td>
-					<td>27</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="checkOne" /></td>
-					<td>4</td>
-					<td>赵六</td>
-					<td>29</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="checkOne" /></td>
-					<td>5</td>
-					<td>田七</td>
-					<td>30</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="checkOne" /></td>
-					<td>6</td>
-					<td>汾九</td>
-					<td>20</td>
-				</tr>
-			</tbody>
-		</table>
-	</body>
+                alert(a * a + b * b);
+            }
+            //6.否则输出a+b
+            else {
+                alert(a + b);
+            }
+        }
+	</script>
 
+</head>
+<body>
+<!--1.创建两个输入框-->
+       <input type="text" id="a"/><br/>
+       <input type="text" id="b"/><br/>
+<!--2.创建一个“点击”按钮-->
+<input type="button" value="点击" onclick="dianji()"/>
+</body>
 </html>
