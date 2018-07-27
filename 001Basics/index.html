@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>1</title>
-	<!--输入整数a和b,若a2+b2大于100,则输出a2+b2百位以上数字,否则输出两数之和-->
-	<script>
-        function dianji() {
-            //3.创建两个变量
-            var a = parseInt(document.getElementById("a").value);
-            var b = parseInt(document.getElementById("b").value);
-            //4.判断a*a+b*b是否大于100
-            //5.如果a*a+b*b大于100，则输出a*a+b*b
-            if (a * a + b * b > 100) {
-
-                alert(a * a + b * b);
+    <meta charset="UTF-8">
+    <title>望庐山瀑布</title>
+    <style>
+        @keyframes myfirst {
+            from {
+                background: red;
             }
-            //6.否则输出a+b
-            else {
-                alert(a + b);
+            to {
+                background: green;
             }
         }
-	</script>
-
+        h1{
+            animation: myfirst 1s;
+        }
+    </style>
 </head>
 <body>
-<!--1.创建两个输入框-->
-<input type="text" id="a"/><br/>
-<input type="text" id="b"/><br/>
-<!--2.创建一个“点击”按钮-->
-<input type="button" value="点击" onclick="dianji()"/>
+<h1>望庐山瀑布</h1>
+<p style="color: green; font-size: 14px;">日照香炉生紫烟，</p>
+<p style="color: green; font-size: 14px;">遥看瀑布挂前川。</p>
+<p style="color: green; font-size: 14px;">飞流直下三千尺，</p>
+<p style="color: green; font-size: 14px;">疑是银河落九天。</p>
 </body>
 </html>
