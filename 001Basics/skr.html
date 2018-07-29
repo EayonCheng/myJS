@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>生活态度</title>
+    <style>
+        @keyframes myfirst {
+            0% {
+                opacity: 0
+            }
+            25% {
+                opacity: 100
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes mysecond {
+            0% {
+                opacity: 0
+            }
+            50% {
+                opacity: 0
+            }
+            60% {
+                opacity: 100
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+        @keyframes mythird {
+            0% {
+                opacity: 0
+            }
+            50% {
+                opacity: 0
+            }
+            75% {
+                opacity: 0
+            }
+            100% {
+                opacity: 100
+            }
+        }
+            h1 {
+
+                position: absolute;
+                width: 100%;
+                text-align: center;
+
+            }
+
+            body {
+                background-image: url("images/2.jpg");
+            }
+
+        #wo {
+              animation: myfirst 5s infinite;
+          }
+
+        #bu {
+            animation: mysecond 5s infinite;
+        }
+        #zhi {
+            animation: mythird 5s infinite;
+        }
+    </style>
+</head>
+<body>
+<!--<audio src="wav/平凡之路~打扰一下乐队大合唱版本.mp3" controls="controls" autoplay="autoplay"></audio>-->
+<audio src="wav/平凡之路~打扰一下乐队大合唱版本.mp3"  autoplay="autoplay" loop="loop" ></audio>
+<h1 id="wo">我这一生</h1>
+<h1 id="bu">不可求荣华富贵</h1>
+<h1 id="zhi">只希望能够活的开心</h1>
+</body>
+</html>
